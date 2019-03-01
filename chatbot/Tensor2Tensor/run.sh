@@ -1,0 +1,9 @@
+CUDA_VISIBLE_DEVICES=6,7 t2t-trainer \
+  --t2t_usr_dir=./problem \
+  --data_dir=./self_data \
+  --output_dir=./train \
+  --problem=chatbot_problem \
+  --model=transformer \
+  --hparams_set=transformer_base_single_gpu \
+  --train_steps=100000
+#   --eval_steps=100

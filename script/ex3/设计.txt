@@ -1,0 +1,13 @@
+1.先用之前成绩最好的chatbot生成一个小规模的答案集合，预计10w组。
+2.对答案集进行learning打分和rule打分，生成两个结果集合。
+3.将评估集合转换为csv文件
+4.以learning和rule的平均分为基准，剔除所有没有三元组的对话，保留剩下的对话进行筛选。
+5.对测试集进行老方法的打分，并上线给人类进行打分。
+（id,key,value,rulekey,rulevalue,rulescore,learnkey,learnvalue,learnscore,bleu,gm,ea,ve）
+
+
+PS D:\IOM\script\ex3> python .\showTradScore.py
+en:0.306702,0.300263,0.578280,0.300758
+
+PS D:\IOM\script\ex3> python .\showTradScore.py
+cn:0.313104,0.401381,0.586744,0.431228
