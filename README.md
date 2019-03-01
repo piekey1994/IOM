@@ -126,7 +126,7 @@ cd ./ensrc/
 
 ## Dialogue Generation Models
 
-[Chatbot](http://xxx)目录里存放了三个常用的Seq2seq模型（GNMT，Fairseq，Transformer），已经写好了一些运行脚本在里面方便直接训练。这里同时也列出了一些收集到的开源聊天机器人：
+[Chatbot](https://github.com/piekey1994/IOM/tree/master/chatbot)目录里存放了三个常用的Seq2seq模型（GNMT，Fairseq，Transformer），已经写好了一些运行脚本在里面方便直接训练。这里同时也列出了一些收集到的开源聊天机器人：
 
 - [GNMT](https://github.com/tensorflow/nmt) :基于LSTM的seq2seq模型，支持attention和beam search。按照我脚本里的参数训练可以训练出能用的聊天机器人，默认参数对话生成质量很差，会出现大量重复内容（在10w和100w的语料库上做过测试）
 - [Fairseq](https://github.com/pytorch/fairseq) :基于CNN的seq2seq模型，直接用默认参数训练对话语料结果会出现大量重复的短语，原因未知。
@@ -184,13 +184,13 @@ def bleu(question,answer):
 
     基于词向量的对话评估方法，与BLEU一样依赖参考答案。具体实现细节参考文章：https://arxiv.org/abs/1603.08023
 
-    python代码参考[script]()目录的calc_time.py
+    python代码参考[script](https://github.com/piekey1994/IOM/tree/master/script)目录的calc_time.py
 
 - Distinct-N
 
     计算生成句子中的Unigram和Bigram，具体实现参考文章：https://arxiv.org/pdf/1510.03055.pdf
 
-    python代码参考[script]()目录的evalResult.py
+    python代码参考[script](https://github.com/piekey1994/IOM/tree/master/script)目录的evalResult.py
 
 ### 中文分词与词性分析
 
@@ -213,9 +213,9 @@ def bleu(question,answer):
 
 ### 主观对话评估平台
 
-基于amaze-UI和CI框架编写的用于人类评估对话的打分系统，代码在[web]()目录
+基于amaze-UI和CI框架编写的用于人类评估对话的打分系统，代码在[web](https://github.com/piekey1994/IOM/tree/master/web)目录
 
-![主界面](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
+![主界面](https://github.com/piekey1994/IOM/blob/master/web/1551430284(1).png)
 
 
 ### 语料爬虫工具
@@ -224,7 +224,7 @@ def bleu(question,answer):
 
 ### 商用聊天机器人自动对话工具
 
-在[script\ex2\chatbot]()目录中，有一个[tuling](http://www.turingapi.com/)机器人的api，还有一个[小冰](https://github.com/yanwii/msxiaoiceapi)的api，还有一个我自己编写的英文聊天机器人[mitsuku](https://www.pandorabots.com/mitsuku/)的api。**请不要滥用这些api！！！**
+在[script\ex2\chatbot](https://github.com/piekey1994/IOM/tree/master/script/ex2/chatbot)目录中，有一个[tuling](http://www.turingapi.com/)机器人的api，还有一个[小冰](https://github.com/yanwii/msxiaoiceapi)的api，还有一个我自己编写的英文聊天机器人[mitsuku](https://www.pandorabots.com/mitsuku/)的api。**请不要滥用这些api！！！**
 
 ## Datasets
 
