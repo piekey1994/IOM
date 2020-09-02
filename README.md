@@ -2,8 +2,6 @@
 
 这个项目提供一个基于信息三元组的自动化对话系统评估方法，它有基于规则和基于神经网络两种实现，并且支持中英文。该项目还包含了做对话系统评估常用的工具和数据集。
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=piekey1994)](https://github.com/ryo-ma/github-profile-trophy)
-
 ## Reference
 
 如果你使用IOM评估你的聊天机器人，请引用下面的文章：
