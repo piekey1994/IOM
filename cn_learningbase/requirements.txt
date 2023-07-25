@@ -47,6 +47,6 @@ tqdm==4.19.4
 ujson==1.35
 urllib3==1.22
 wcwidth==0.1.7
-Werkzeug==0.12.2
+Werkzeug==0.15.3
 wrapt==1.10.11
 jieba==0.39
